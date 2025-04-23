@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./parts/head.html', {'title': 'Home Page'})
+
+<body>
+  <div class="page">
+
+    @@include('./parts/header.html')
+
+    <main class="main">
+      <section class="section section--space">
+        <div class="container">
+          <ul class="posts">
+            <article class="post">
+              <h2 class="post__title text-title-h2 text-weight-bold">
+                <a href="single.html" class="link">Lorem ipsum dolor sit amet.</a>
+              </h2>
+              <div class="post__meta">
+                <span>Author</span>
+                <a href="#" class="link">User</a>,
+                <span>posted</span>
+                <time datetime="">21 september 2024</time>
+              </div>
+              <div class="post__excerpt content">
+                <p>Sapiente iste mollitia reprehenderit fugit ipsum, fuga dolorum magni, voluptate, dicta ducimus neque dolorem! Pariatur sunt voluptatibus modi, cum, praesentium dignissimos tenetur atque velit quisquam quis omnis magnam vero nemo similique corrupti voluptas temporibus aut nostrum. Exercitationem, illum facilis esse iusto aut pariatur, iste est assumenda, voluptatum perferendis delectus voluptates.</p>
+              </div>
+            </article>
+            <article class="post">
+              <h2 class="post__title text-title-h2 text-weight-bold">
+                <a href="single.html" class="link">Lorem ipsum dolor sit amet.</a>
+              </h2>
+              <div class="post__meta">
+                <span>Author</span>
+                <a href="#" class="link">User</a>,
+                <span>posted</span>
+                <time datetime="">21 september 2024</time>
+              </div>
+              <div class="post__excerpt content">
+                <p>Sapiente iste mollitia reprehenderit fugit ipsum, fuga dolorum magni, voluptate, dicta ducimus neque dolorem! Pariatur sunt voluptatibus modi, cum, praesentium dignissimos tenetur atque velit quisquam quis omnis magnam vero nemo similique corrupti voluptas temporibus aut nostrum. Exercitationem, illum facilis esse iusto aut pariatur, iste est assumenda, voluptatum perferendis delectus voluptates.</p>
+              </div>
+            </article>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    @@include('./parts/footer.html')
+
+  </div>
+</body>
+
+</html>

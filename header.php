@@ -3,7 +3,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <?php wp_head(); ?>
@@ -15,48 +15,22 @@
 
 <div class="page">
 
-  <header id="header" class="header">
-
-    <div class="site-branding">
-      <?php
-        the_custom_logo();
-
-        if ( is_front_page() && is_home() ) :
-          ?>
-          <h1 class="site-title">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-              <?php bloginfo( 'name' ); ?>
-            </a>
-          </h1>
-          <?php
-        else :
-          ?>
-          <p class="site-title">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-              <?php bloginfo( 'name' ); ?>
-            </a>
-          </p>
-          <?php
-        endif;
-
-        $lmb_description = get_bloginfo( 'description', 'display' );
-        if ( $lmb_description || is_customize_preview() ) :
-          ?>
-          <p class="site-description"><?php echo $lmb_description; ?></p>
-        <?php endif;
-      ?>
+  <header id="header" class="header <?php echo is_singular() ? esc_attr('header--absolute') : esc_attr(''); ?>">
+    <div class="container container--wide">
+      <div class="header__navigation">
+        <?php lmb_the_logo() ?>
+        <div class="header__slider">
+          <?php lmb_the_navigation(array('theme_location' => 'menu-1')); ?>
+        </div>
+        <button class="header__hamburger hamburger-button">
+          <div class="hamburger hamburger--chop">
+            <div class="inner">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </button>
+      </div>
     </div>
-
-    <nav>
-      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lmb' ); ?></button>
-      <?php
-        wp_nav_menu(
-          array(
-            'theme_location' => 'menu-1',
-            'menu_id'        => 'primary-menu',
-          )
-        );
-      ?>
-    </nav>
-
   </header>
