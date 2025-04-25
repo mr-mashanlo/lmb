@@ -18,9 +18,9 @@
   <header id="header" class="header <?php echo is_singular() ? esc_attr('header--absolute') : esc_attr(''); ?>">
     <div class="container container--wide">
       <div class="header__navigation">
-        <?php lmb_the_logo() ?>
+        <?php echo lmb_get_logo() ?>
         <div class="header__slider">
-          <?php lmb_the_navigation(array('theme_location' => 'menu-1')); ?>
+          <?php lmb_the_site_navigator( array( 'theme_location' => 'menu-1' ) ); ?>
         </div>
         <button class="header__hamburger hamburger-button">
           <div class="hamburger hamburger--chop">

@@ -2,7 +2,7 @@
 
 function lmb_setup() {
 
-  load_theme_textdomain( 'lmb', get_template_directory() . '/languages' );
+  // load_theme_textdomain( 'lmb', get_template_directory() . '/languages' );
 
   add_theme_support( 'automatic-feed-links' );
 
@@ -12,26 +12,16 @@ function lmb_setup() {
 
   add_theme_support( 'customize-selective-refresh-widgets' );
 
+  add_theme_support( 'custom-logo' );
+
   add_theme_support(
     'html5',
     array(
       'search-form',
-      'comment-form',
-      'comment-list',
       'gallery',
       'caption',
       'style',
       'script',
-    )
-  );
-
-  add_theme_support(
-    'custom-logo',
-    array(
-      'height'      => 250,
-      'width'       => 250,
-      'flex-width'  => true,
-      'flex-height' => true,
     )
   );
 
@@ -42,6 +32,6 @@ function lmb_setup() {
     )
   );
 
-}
+};
 
 add_action( 'after_setup_theme', 'lmb_setup' );

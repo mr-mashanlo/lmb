@@ -2,7 +2,7 @@
 
 function lmb_sidebar( $wp_customize ) {
   $wp_customize -> add_section( 'sidebar_settings', array(
-    'title'    => __('Sidebar Settings', 'lmb'),
+    'title'    => __( 'Sidebar Settings', 'lmb' ),
     'priority' => 30,
   ) );
 
@@ -13,7 +13,7 @@ function lmb_sidebar( $wp_customize ) {
 
   $wp_customize -> add_control( 'display_sidebar', array(
     'type'    => 'checkbox',
-    'label'   => __('Display Sidebar', 'lmb'),
+    'label'   => __( 'Display Sidebar', 'lmb' ),
     'section' => 'sidebar_settings',
   ) );
 }
