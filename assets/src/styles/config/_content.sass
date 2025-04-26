@@ -5,7 +5,7 @@
   & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
     margin-top: 5rem
     line-height: 1.5
-  & > p, & > ul, & > ol
+  & > *
     margin-top: 2rem
   h1
     font-weight: 700
@@ -28,5 +28,28 @@
   ol
     margin-left: 3rem
     list-style-type: decimal
+  blockquote
+    padding: 2rem 3rem
+    border-radius: 0 1rem 1rem 0
+    border-left: .5rem solid variable.$neutral-1
+    background: variable.$neutral-5
+  pre
+    padding: 2rem 3rem
+    border-radius: 1rem
+    background: variable.$neutral-1
+    color: variable.$neutral-3
+    font-family: 'UbuntuMono', monospace
+  table
+    width: 100%
+    table-layout: fixed
+    border-collapse: collapse
+    font-family: 'UbuntuMono', monospace
+  td
+    padding: 1rem
+    border: 1px solid variable.$neutral-4
+  figure, img
+    width: 100%
+  img
+    width: 100%
   & > *:first-child
     margin-top: 0

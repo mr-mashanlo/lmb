@@ -8,9 +8,9 @@ if ( !function_exists( 'lmb_the_posts' ) ) {
 
       echo '<div class="posts">';
 
-      while (have_posts()) {
+      while ( have_posts() ) {
         the_post();
-        get_template_part( 'templates/content', get_post_type());
+        get_template_part( 'templates/content', get_post_type() );
       };
 
       echo '</div>';

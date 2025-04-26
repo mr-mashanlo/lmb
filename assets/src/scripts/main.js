@@ -1,7 +1,7 @@
 import { initHamburger } from './hamburger';
-// import { initIntersectionObserver } from './interserver';
+import { initLenis } from './lenis';
 
 window.addEventListener( 'load', () => {
   initHamburger();
-  // initIntersectionObserver();
+  initLenis();
 } );

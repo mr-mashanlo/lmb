@@ -33,7 +33,7 @@ if ( !function_exists( 'lmb_get_post_navigator' ) ) {
     };
 
     $navigator_string = sprintf(
-      $navigator_html = '<div class="navigator"><div class="navigator__prev">%1$s</div><div class="navigator__next">%2$s</div></div>',
+      '<div class="navigator"><div class="navigator__prev">%1$s</div><div class="navigator__next">%2$s</div></div>',
       $prev_post ? $prev_string : '',
       $next_post ? $next_string : ''
     );

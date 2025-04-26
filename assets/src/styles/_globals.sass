@@ -23,13 +23,15 @@ body
   padding: 0 1.5rem
   &--wide
     max-width: 120rem
+  &--screen
+    height: 100%
 
 .section
   padding: 3rem 0
   @media ( variable.$screen-sm )
     padding: 6rem 0
   &--screen
-    min-height: 100vh
+    height: 100vh
 
 .menu
   display: flex
@@ -146,6 +148,21 @@ body
     margin-top: 5rem
   &__navigator
     margin-top: 5rem
+
+.banner
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  gap: 2rem
+  height: 100%
+  text-align: center
+  &__icon
+    width: 3rem
+    height: 3rem
+    fill: variable.$neutral-3
+  &__content
+    max-width: 40rem
 
 .hidden
   overflow: hidden
