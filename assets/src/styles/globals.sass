@@ -1,0 +1,159 @@
+@use 'variables' as variable
+
+html
+  font-size: calc(100vw / 375 * 10)
+  @media ( variable.$screen-sm )
+    font-size: calc(100vw / 1440 * 10)
+
+body
+  font-family: 'Geologica', sans-serif
+  font-size: 1.4rem
+  line-height: 1.5
+  color: variable.$neutral-1
+  @media ( variable.$screen-sm )
+    font-size: 1.6rem
+
+.main
+  min-height: 100vh
+
+.section
+  padding: 3rem 0
+  &--wide
+    @media ( variable.$screen-sm )
+      padding: 6rem 0
+  &--screen
+    height: 100vh
+
+.container
+  width: 100%
+  max-width: 75rem
+  margin: 0 auto
+  padding: 0 1.5rem
+  &--wide
+    max-width: 120rem
+  &--screen
+    height: 100%
+
+.brand
+  display: flex
+  align-items: center
+  gap: 1rem
+  &__icon
+    height: 4rem
+  &__name
+    font-weight: 700
+    font-size: 2.4rem
+  &__description
+    font-size: 1.4rem
+    color: variable.$neutral-3
+
+.menu
+  display: flex
+  flex-direction: column
+  gap: 3rem
+  @media ( variable.$screen-sm )
+    flex-direction: row
+    gap: 4rem
+
+.header
+  padding: 2rem 0
+  @media ( variable.$screen-sm )
+    padding: 4rem 0
+  &--absolute
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10
+    width: 100%
+    @media ( variable.$screen-sm )
+      color: variable.$white
+  &__navigation
+    display: flex
+    align-items: center
+    gap: 2rem
+    @media ( variable.$screen-sm )
+      flex-direction: row
+      align-items: center
+      gap: 5rem
+  &__slider
+    width: 100%
+    height: 100vh
+    padding: 10rem 2rem 2rem 2rem
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 10
+    transform: translateX(100%)
+    transition: .5s
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background: variable.$neutral-4
+    @media ( variable.$screen-sm )
+      position: static
+      width: auto
+      height: auto
+      margin-left: auto
+      padding: 0
+      background: none
+      transform: translateX(0%)
+    &--active
+      transform: translateX(0%)
+  &__hamburger
+    padding: 0
+    margin-left: auto
+    background: none
+    border: none
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    z-index: 100
+    @media ( variable.$screen-sm )
+      display: none
+  &__menu
+    font-size: 2rem
+    align-items: center
+    @media ( variable.$screen-sm )
+      font-size: 1.6rem
+
+.footer
+  padding: 2rem 0
+  @media ( variable.$screen-sm )
+    padding: 4rem 0
+  &__navigation
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    @media ( variable.$screen-sm )
+      flex-direction: row
+      align-items: center
+      gap: 5rem
+  &__slider
+    @media ( variable.$screen-sm )
+      margin-left: auto
+
+.text
+  &-title
+    &-h1
+      font-size: 3.2rem
+      @media ( variable.$screen-sm )
+        font-size: 4rem
+    &-h2
+      font-size: 2.4rem
+      @media ( variable.$screen-sm )
+        font-size: 3.2rem
+    &-h3
+      font-size: 1.6rem
+      @media ( variable.$screen-sm )
+        font-size: 2.4rem
+  &-weight
+    &-bold
+      font-weight: 700
+
+.unscrollable
+  overflow: hidden
+  height: 100vh
+
+.link:hover
+  text-decoration: underline

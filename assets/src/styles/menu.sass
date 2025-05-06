@@ -1,0 +1,9 @@
+@use 'variables' as variable
+
+.menu
+  display: flex
+  flex-direction: column
+  gap: 3rem
+  @media ( variable.$screen-sm )
+    flex-direction: row
+    gap: 4rem
