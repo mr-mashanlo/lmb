@@ -20,7 +20,7 @@ if ( !function_exists( 'lmb_the_posts' ) ) {
         lmb_get_page_navigator()
       );
 
-      echo lmb_get_page_navigator() ? $post_navigator_string : esc_html( '' );
+      echo lmb_get_page_navigator() ? $post_navigator_string : '';
     } else {
       get_template_part( 'templates/content', 'none' );
     }

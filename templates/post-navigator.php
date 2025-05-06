@@ -8,7 +8,7 @@ if ( !function_exists( 'lmb_get_post_navigator' ) ) {
 
     if ( !empty( $prev_post ) ) {
       $prev_string = sprintf(
-        '<a href="%1$s" class="navigator-link navigator-link--prev"><span class="navigator-link__title">' . esc_html( 'Previous post', 'lmb' ) . '</span> <span class="navigator-link__text link">%2$s</span> <time datetime="%3$s" class="navigator-link__time">%4$s</time></a>',
+        '<a href="%1$s" class="navigator-link navigator-link--prev"><span class="navigator-link__title">' . esc_html__( 'Previous post', 'lmb' ) . '</span> <span class="navigator-link__text link">%2$s</span> <time datetime="%3$s" class="navigator-link__time">%4$s</time></a>',
         esc_url( get_permalink( $prev_post->ID ) ),
         esc_html( get_the_title( $prev_post->ID ) ),
         esc_attr( get_the_date( DATE_W3C, $prev_post->ID ) ),
@@ -20,7 +20,7 @@ if ( !function_exists( 'lmb_get_post_navigator' ) ) {
 
     if ( !empty( $next_post ) ) {
       $next_string = sprintf(
-        '<a href="%1$s" class="navigator-link navigator-link--next"><span class="navigator-link__title">' . esc_html( 'Next post', 'lmb' ) . '</span> <span class="navigator-link__text link">%2$s</span> <time datetime="%3$s" class="navigator-link__time">%4$s</time></a>',
+        '<a href="%1$s" class="navigator-link navigator-link--next"><span class="navigator-link__title">' . esc_html__( 'Next post', 'lmb' ) . '</span> <span class="navigator-link__text link">%2$s</span> <time datetime="%3$s" class="navigator-link__time">%4$s</time></a>',
         esc_url( get_permalink( $next_post->ID ) ),
         esc_html( get_the_title( $next_post->ID ) ),
         esc_attr( get_the_date( DATE_W3C, $next_post->ID ) ),
