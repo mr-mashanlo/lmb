@@ -28,7 +28,7 @@ export default {
       plugins: [ cssnano( { preset: IS_DEVELOPMENT ? 'default' : 'advanced' } ), sortMediaQueries() ]
     } ),
     copy( {
-      targets: [ { src: 'src/fonts/**/*', dest: 'dist/fonts' }, { src: 'src/images/**/*', dest: 'dist/images' } ]
+      targets: [ { src: 'src/fonts/**/*.*', dest: 'dist/fonts' }, { src: 'src/images/**/*.*', dest: 'dist/images' } ]
     } ),
     IS_DEVELOPMENT && livereload()
   ]
