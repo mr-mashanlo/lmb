@@ -8,7 +8,7 @@
       <div class="banner">
         <div class="banner__content content">
           <h1>404</h1>
-          <p>Oops, this page not found!</p>
+          <p><?php esc_html_e( 'Oops, this page not found!', 'lmb' ); ?></p>
         </div>
       </div>
     </div>
