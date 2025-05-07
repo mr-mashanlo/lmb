@@ -29,10 +29,6 @@ if ( !function_exists( 'lmb_get_page_navigator' ) ) {
       return;
     };
 
-    if ( !is_singular( 'post' ) ) {
-      return;
-    };
-
     $navigator_string = sprintf(
       '<div class="navigator"><div class="navigator__prev">%1$s</div><div class="navigator__next">%2$s</div></div>',
       $paged > 1 ? $prev_string : '',

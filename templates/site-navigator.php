@@ -7,7 +7,6 @@ if ( !function_exists( 'lmb_the_site_navigator' ) ) {
     $default = array(
       'theme_location' => 'menu-1',
       'container'      => false,
-      'depth'          => 1,
       'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
     );
 
