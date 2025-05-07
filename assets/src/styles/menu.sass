@@ -3,7 +3,60 @@
 .menu
   display: flex
   flex-direction: column
-  gap: 3rem
+  font-size: 1.4rem
   @media ( variable.$screen-sm )
     flex-direction: row
     gap: 4rem
+  a
+    display: inline-block
+    width: 100%
+    padding: 1rem
+    @media ( variable.$screen-sm )
+      padding: 0
+      width: auto
+  .menu-item
+    &:hover > .sub-menu
+      @media ( variable.$screen-sm )
+        opacity: 1
+        visibility: visible
+
+.sub-menu
+  @media ( variable.$screen-sm )
+    padding-top: 1rem
+    position: absolute
+    top: 100%
+    left: 0
+    opacity: 0
+    visibility: hidden
+  a
+    display: inline-block
+    min-width: 25rem
+    background: variable.$black
+    @media ( variable.$screen-sm )
+      padding: 1rem
+      background: variable.$neutral-5
+  .sub-menu
+    padding: 0
+    overflow: hidden
+    position: static
+    opacity: 1
+    visibility: visible
+    @media ( variable.$screen-sm )
+      height: 0
+  .menu-item
+    &:hover > .sub-menu
+      @media ( variable.$screen-sm )
+        height: auto
+
+.menu-item
+  position: relative
+
+.menu-item-has-children
+  & > a
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1rem
+    &::after
+      content: '+'
+      display: block

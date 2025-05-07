@@ -39,21 +39,17 @@ body
   align-items: center
   gap: 1rem
   &__icon
-    height: 4rem
+    height: 3rem
+    @media ( variable.$screen-sm )
+      height: 4rem
   &__name
     font-weight: 700
-    font-size: 2.4rem
+    font-size: 2rem
+    @media ( variable.$screen-sm )
+      font-size: 2.4rem
   &__description
     font-size: 1.4rem
     color: variable.$neutral-3
-
-.menu
-  display: flex
-  flex-direction: column
-  gap: 3rem
-  @media ( variable.$screen-sm )
-    flex-direction: row
-    gap: 4rem
 
 .header
   padding: 2rem 0
@@ -65,8 +61,7 @@ body
     left: 0
     z-index: 10
     width: 100%
-    @media ( variable.$screen-sm )
-      color: variable.$white
+    color: variable.$white
   &__navigation
     display: flex
     align-items: center
@@ -87,8 +82,8 @@ body
     transition: .5s
     display: flex
     flex-direction: column
-    justify-content: center
-    background: variable.$neutral-4
+    background: variable.$black
+    // overflow-x: auto
     @media ( variable.$screen-sm )
       position: static
       width: auto

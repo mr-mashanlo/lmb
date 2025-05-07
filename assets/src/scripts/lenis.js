@@ -4,6 +4,6 @@ export function initLenis() {
   new Lenis( {
     autoRaf: true,
     smoothWheel: true,
-    lerp: 0.15
+    lerp: 0.18
   } );
 }
