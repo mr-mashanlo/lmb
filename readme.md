@@ -1,6 +1,6 @@
 # Minimalist WordPress Theme
 
-Custom WordPress theme focused on simplicity, clean design, and ease of use. It is built for those who value minimalism and want to create a modern website without unnecessary clutter.
+Minimal WordPress theme written in PHP for lightweight blogs, using light colors and removing all unnecessary elements, leaving only content and essential controls for reading and navigation.
 
 ## Features include:
 
@@ -17,3 +17,4 @@ Custom WordPress theme focused on simplicity, clean design, and ease of use. It 
 ---
 
 > This project is a work in progress. Contributions and feedback are welcome.
+
