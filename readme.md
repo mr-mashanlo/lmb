@@ -2,7 +2,7 @@
 
 Minimal WordPress theme written in PHP for lightweight blogs, using light colors and removing all unnecessary elements, leaving only content and essential controls for reading and navigation.
 
-## Features include:
+## Features:
 
 - Minimalist design with no distractions
 - Lightweight and fast performance
@@ -11,10 +11,11 @@ Minimal WordPress theme written in PHP for lightweight blogs, using light colors
 
 ## Contacts:
 
-- Telegram — [@mr_mashanlo](https://t.me/mr_mashanlo)
-- LinkedIn — [@mr-mashanlo](https://linkedin.com/in/mr-mashanlo)
+- Telegram - [@mr_mashanlo](https://t.me/mr_mashanlo)
+- LinkedIn - [@mr-mashanlo](https://linkedin.com/in/mr-mashanlo)
 
 ---
 
 > This project is a work in progress. Contributions and feedback are welcome.
+
 
