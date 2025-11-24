@@ -7,7 +7,7 @@ if ( !function_exists( 'lmb_the_post' ) ) {
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();
-        get_template_part( 'templates/content', 'single' );
+        get_template_part( 'templates/content/content', 'page' );
       };
     };
 

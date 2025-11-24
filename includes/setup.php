@@ -25,8 +25,8 @@ function lmb_setup() {
 
   register_nav_menus(
     array(
-      'menu-1' => esc_html__( 'Primary', 'lmb' ),
-      'menu-2' => esc_html__( 'Secondary', 'lmb' ),
+      'menu-1' => esc_html__( 'Header', 'lmb' ),
+      'menu-2' => esc_html__( 'Footer', 'lmb' ),
     )
   );
 

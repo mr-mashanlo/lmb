@@ -10,19 +10,15 @@ if ( !function_exists( 'lmb_the_posts' ) ) {
 
       while ( have_posts() ) {
         the_post();
-        get_template_part( 'templates/content', get_post_type() );
+        get_template_part( 'templates/content/content', get_post_type() );
       };
 
       echo '</div>';
 
-      $post_navigator_string = sprintf(
-        '<section class="section"><div class="container">%1$s</div></section>',
-        lmb_get_page_navigator()
-      );
-
-      echo lmb_get_page_navigator() ? $post_navigator_string : '';
     } else {
-      get_template_part( 'templates/content', 'none' );
+
+      get_template_part( 'templates/content/content', 'none' );
+
     }
 
     do_action( 'lmb_after_the_posts' );

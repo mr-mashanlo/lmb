@@ -1,8 +1,8 @@
 <?php
 
-if ( !function_exists( 'lmb_get_page_navigator' ) ) {
-  function lmb_get_page_navigator() {
-    do_action( 'lmb_before_get_page_navigator' );
+if ( !function_exists( 'lmb_get_navigator' ) ) {
+  function lmb_get_navigator() {
+    do_action( 'lmb_before_get_navigator' );
 
     global $paged, $wp_query;
 
@@ -37,6 +37,6 @@ if ( !function_exists( 'lmb_get_page_navigator' ) ) {
 
     return $navigator_string;
 
-    do_action( 'lmb_after_get_page_navigator' );
+    do_action( 'lmb_after_get_navigator' );
   };
 };
