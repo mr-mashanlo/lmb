@@ -1,0 +1,10 @@
+@use '../config/variables' as variable
+
+.menu
+  display: flex
+  flex-direction: column
+  font-size: 1.4rem
+  gap: 2rem
+  @media ( variable.$screen-sm )
+    flex-direction: row
+    gap: 4rem

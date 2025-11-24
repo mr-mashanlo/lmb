@@ -17,5 +17,3 @@ Minimal WordPress theme written in PHP for lightweight blogs, using light colors
 ---
 
 > This project is a work in progress. Contributions and feedback are welcome.
-
-

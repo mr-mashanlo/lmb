@@ -1,10 +1,10 @@
-@use 'variables' as variable
+@use '../config/variables' as variable
 
 .content
-  line-height: 2
+  line-height: 2.1
   & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
     margin-top: 5rem
-    line-height: 1.5
+    line-height: 1.4
   & > *
     margin-top: 2rem
   h1
@@ -38,12 +38,12 @@
     border-radius: 1rem
     background: variable.$neutral-1
     color: variable.$neutral-3
-    font-family: 'UbuntuMono', monospace
+    font-family: 'IBMPlexMono', monospace
   table
     width: 100%
     table-layout: fixed
     border-collapse: collapse
-    font-family: 'UbuntuMono', monospace
+    font-family: 'IBMPlexMono', monospace
   td
     padding: 1rem
     border: 1px solid variable.$neutral-4
@@ -51,5 +51,9 @@
     width: 100%
   img
     width: 100%
+  strong
+    font-weight: 700
+  em
+    font-style: italic
   & > *:first-child
     margin-top: 0

@@ -1,0 +1,15 @@
+@use '../config/variables' as variable
+
+.archive
+  &__title
+    margin-top: 1rem
+    font-weight: 700
+    font-size: 2.4rem
+    line-height: 1.4
+    @media ( variable.$screen-sm )
+      margin-top: 1.5rem
+      font-size: 6rem
+  &__content
+    margin-top: 2rem
+    @media ( variable.$screen-sm )
+      font-size: 2.5rem

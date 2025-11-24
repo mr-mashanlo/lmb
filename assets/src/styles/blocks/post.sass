@@ -1,0 +1,43 @@
+@use '../config/variables' as variable
+
+.post
+  &__meta
+    color: variable.$neutral-3
+  &__title
+    margin-top: 1rem
+    font-weight: 700
+    font-size: 2.4rem
+    line-height: 1.4
+    @media ( variable.$screen-sm )
+      margin-top: 1.5rem
+      font-size: 4.2rem
+  &__link
+    &:hover
+      text-decoration: underline
+  &__excerpt
+    margin-top: 1rem
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 4
+    @media ( variable.$screen-sm )
+      margin-top: 2rem
+  &__content
+    margin-top: 2rem
+    &--large-padding-top
+      margin-top: 3rem
+      @media ( variable.$screen-sm )
+        margin-top: 5rem
+  &__categories
+    margin-top: 2rem
+    color: variable.$neutral-3
+  &__tags
+    margin-top: 2rem
+    color: variable.$neutral-3
+
+.posts
+  display: grid
+  gap: 5rem
+  @media ( variable.$screen-sm )
+    grid-template-columns: repeat(2, 1fr)
+    gap: 10rem
