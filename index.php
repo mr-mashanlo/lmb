@@ -5,9 +5,7 @@
 
 <main class="main">
   <section class="section">
-    <div class="container">
-      <?php lmb_the_posts(); ?>
-    </div>
+    <?php lmb_the_posts(); ?>
   </section>
 </main>
 

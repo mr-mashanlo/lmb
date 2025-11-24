@@ -3,14 +3,10 @@
 ?>
 
 <main class="main">
-  <section class="section section--screen">
-    <div class="container container--screen">
-      <div class="banner">
-        <div class="banner__content content">
-          <h1>404</h1>
-          <p><?php esc_html_e( 'Oops, this page not found!', 'lmb' ); ?></p>
-        </div>
-      </div>
+  <section class="section">
+    <div class="content">
+      <h1>404</h1>
+      <p><?php esc_html_e( 'Oops, this page not found!', 'lmb' ); ?></p>
     </div>
   </section>
 </main>
