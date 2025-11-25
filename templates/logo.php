@@ -9,7 +9,7 @@ if ( !function_exists( 'lmb_get_logo' ) ) {
     $site_description = get_bloginfo( 'description' );
 
     $image_id = get_theme_mod( 'custom_logo' );
-    $image_url = $image_id ? wp_get_attachment_image_url( $image_id, 'full' ) : '';
+    $image_url = get_site_icon_url();;
 
     $image_string = sprintf(
       '<a href="%1$s" class="brand__link"><img src="%2$s" alt="%3$s" class="brand__icon"></a>',
@@ -31,7 +31,7 @@ if ( !function_exists( 'lmb_get_logo' ) ) {
 
     $logo_string = sprintf(
       '<div class="brand">%1$s <p class="brand__content">%2$s %3$s</p></div>',
-      $image_id ? $image_string : '',
+      has_site_icon() ? $image_string : '',
       $name_string,
       $site_description ? $description_string : ''
     );
