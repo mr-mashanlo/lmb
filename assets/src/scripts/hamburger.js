@@ -1,6 +1,5 @@
 export function initHamburger() {
 
-  const page = document.querySelector( '.page' );
   const button = document.querySelector( '.hamburger-button' );
 
   if ( !button ) return;
@@ -9,7 +8,7 @@ export function initHamburger() {
   const slider = document.querySelector( '.header__slider' );
 
   button.addEventListener( 'click', () => {
-    page.classList.toggle( 'unscrollable' );
+    document.body.classList.toggle( 'unscrollable' );
     hamburger.classList.toggle( 'active' );
     slider.classList.toggle( 'header__slider--active' );
   } );
