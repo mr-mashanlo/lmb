@@ -1,6 +1,8 @@
 {
-  "name": "rp-starter",
-  "version": "0.0.0",
+  "name": "lmb",
+  "description": "Minimal WordPress theme written in PHP for lightweight blogs.",
+  "version": "1.0.0",
+  "author": "Lee Mashanlo (https://github.com/mr-mashanlo)",
   "type": "module",
   "scripts": {
     "dev": "rollup -c -w",
@@ -15,7 +17,6 @@
     "cssnano-preset-advanced": "^7.0.6",
     "postcss-sort-media-queries": "^5.2.0",
     "rollup": "^4.40.1",
-    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.87.0"

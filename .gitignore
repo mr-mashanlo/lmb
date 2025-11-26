@@ -1,9 +1,7 @@
-# Folders
-node_modules
-
-# Files
+# Files and folders
 .env
 package-lock.json
+node_modules
 
 # Editor directories and files
 .git
