@@ -10,10 +10,11 @@ import terser from '@rollup/plugin-terser';
 const IS_DEVELOPMENT = process.env.ROLLUP_WATCH === 'true';
 
 export default {
-  input: 'assets/src/scripts/main.js',
+  input: [ 'assets/src/scripts/main.js', 'assets/src/scripts/search.js' ],
   output: {
-    file: 'assets/dist/main.min.js',
-    format: 'iife'
+    dir: 'assets/dist',
+    format: 'es',
+    entryFileNames: '[name].min.js',
   },
   plugins: [
     resolve(),

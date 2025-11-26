@@ -23,6 +23,7 @@
     transition: .5s
     display: flex
     flex-direction: column
+    gap: 2rem
     background: variable.$bcg-color
     @media ( variable.$screen-sm )
       position: static
@@ -30,6 +31,8 @@
       height: auto
       margin-left: auto
       padding: 0
+      flex-direction: row
+      gap: 4rem
       background: none
       transform: translateX(0%)
     &--active
