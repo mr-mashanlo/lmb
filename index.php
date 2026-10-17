@@ -7,6 +7,9 @@
   <section class="section">
     <?php lmb_the_posts(); ?>
   </section>
+  <section class="section">
+    <?php echo lmb_get_navigator(); ?>
+  </section>
 </main>
 
 <?php

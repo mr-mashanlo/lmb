@@ -12,25 +12,25 @@ if ( !function_exists( 'lmb_get_logo' ) ) {
     $image_url = get_site_icon_url();;
 
     $image_string = sprintf(
-      '<a href="%1$s" class="brand__link"><img src="%2$s" alt="%3$s" class="brand__icon"></a>',
+      '<a href="%1$s"><img src="%2$s" alt="%3$s" class="logo__image"></a>',
       esc_url( $home_url ),
       esc_url( $image_url ),
       esc_html( $site_name )
     );
 
     $name_string = sprintf(
-      '<a href="%1$s" class="brand__name">%2$s</a>',
+      '<a href="%1$s" class="logo__title">%2$s</a>',
       esc_url( $home_url ),
       esc_html( $site_name )
     );
 
     $description_string = sprintf(
-      '<span class="brand__description"> / %1$s</span>',
+      '<span class="logo__description"> / %1$s</span>',
       esc_html( $site_description )
     );
 
     $logo_string = sprintf(
-      '<div class="brand">%1$s <p class="brand__content">%2$s %3$s</p></div>',
+      '<div class="logo">%1$s %2$s %3$s</div>',
       has_site_icon() ? $image_string : '',
       $name_string,
       $site_description ? $description_string : ''

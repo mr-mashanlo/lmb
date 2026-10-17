@@ -7,7 +7,7 @@ if ( !function_exists( 'lmb_the_menu' ) ) {
     $default = array(
       'theme_location' => 'menu-1',
       'container'      => false,
-      'items_wrap'     => '<ul class="header__menu %2$s">%3$s</ul>',
+      'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
       'depth'           => 1
     );
 

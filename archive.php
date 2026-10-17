@@ -5,13 +5,13 @@
 
 <main class="main">
   <section class="section">
-    <article class="archive">
-      <?php echo lmb_get_archive_title(); ?>
-      <?php echo lmb_get_archive_content(); ?>
-    </article>
+    <?php echo lmb_get_archive_title(); ?>
   </section>
   <section class="section">
     <?php lmb_the_posts(); ?>
+  </section>
+  <section class="section">
+    <?php echo lmb_get_navigator(); ?>
   </section>
 </main>
 

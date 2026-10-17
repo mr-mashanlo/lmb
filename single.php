@@ -26,7 +26,7 @@
   <?php
     if ( lmb_get_post_navigator() ) {
       ?>
-        <section class="section section--no-padding-top">
+        <section class="section">
           <?php echo lmb_get_post_navigator(); ?>
         </section>
       <?php

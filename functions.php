@@ -41,5 +41,3 @@ require get_template_directory() . '/templates/post/post-navigator.php';
 
 
 require get_template_directory() . '/templates/archive/archive-title.php';
-
-require get_template_directory() . '/templates/archive/archive-content.php';
