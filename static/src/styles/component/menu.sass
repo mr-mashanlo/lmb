@@ -1,0 +1,11 @@
+@use '../app/variables' as variable
+
+.menu
+  display: flex
+  flex-direction: column
+  gap: 2rem
+  @media ( variable.$screen-sm )
+    flex-direction: row
+    gap: 3rem
+  a:hover
+    text-decoration: underline

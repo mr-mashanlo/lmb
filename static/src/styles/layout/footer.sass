@@ -1,0 +1,13 @@
+@use '../app/variables' as variable
+
+.footer
+  margin-top: auto
+  display: flex
+  flex-direction: column
+  gap: 2rem
+  @media ( variable.$screen-sm )
+    flex-direction: row
+    align-items: center
+    gap: 3rem
+  &__logo
+    margin-right: auto

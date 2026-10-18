@@ -1,0 +1,11 @@
+@use '../app/variables' as variable
+
+.page
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+.section
+  padding: 1.6rem 
+  @media ( variable.$screen-sm )
+    padding: 2.4rem

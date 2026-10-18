@@ -1,0 +1,15 @@
+@use './variables' as variable
+
+html
+  font-size: calc(100vw / 375 * 10)
+  @media ( variable.$screen-sm )
+    font-size: calc(100vw / 1440 * 10)
+
+body
+  font-family: 'IBM Plex Mono', monospace
+  font-size: 1.2rem
+  line-height: 1.8
+  background-color: variable.$bg-color
+  color: variable.$text-color
+  @media ( variable.$screen-sm )
+    font-size: 1.2rem

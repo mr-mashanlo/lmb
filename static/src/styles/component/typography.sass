@@ -1,0 +1,39 @@
+@use '../app/variables' as variable
+
+.typography
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
+    margin-top: 5rem
+    font-weight: 700
+  & > *
+    margin-top: 2rem
+  ul
+    margin-left: 2.5rem
+    list-style-type: disc
+  ol
+    margin-left: 3rem
+    list-style-type: decimal
+  blockquote
+    padding: 2rem 3rem
+    border-radius: 0 1rem 1rem 0
+    border-left: .5rem solid variable.$text-color
+  pre
+    padding: 2rem 3rem
+    border-radius: 1rem
+    color: variable.$light-text-color
+  table
+    width: 100%
+    table-layout: fixed
+    border-collapse: collapse
+  td
+    padding: 1rem
+    border: 1px solid variable.$light-text-color
+  figure, img
+    width: 100%
+  img
+    width: 100%
+  strong
+    font-weight: 700
+  em
+    font-style: italic
+  & > *:first-child
+    margin-top: 0

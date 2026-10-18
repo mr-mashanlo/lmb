@@ -1,0 +1,14 @@
+@use '../app/variables' as variable
+
+.logo
+  display: flex
+  align-items: center
+  gap: 1rem
+  &__image
+    height: 2rem
+    @media ( variable.$screen-sm )
+      height: 3rem
+  &__title
+    font-weight: 700
+  &__description
+    color: variable.$light-text-color

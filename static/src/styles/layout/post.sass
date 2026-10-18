@@ -1,0 +1,45 @@
+@use '../app/variables' as variable
+
+.posts
+  display: grid
+  gap: 4rem
+  @media ( variable.$screen-sm )
+    grid-template-columns: repeat(3, 1fr)
+    gap: 8rem
+
+.post
+  display: flex
+  flex-direction: column
+  gap: 1.4rem
+  &__meta
+    color: variable.$light-text-color
+  &__categories
+    color: variable.$light-text-color
+  &__tags
+    color: variable.$light-text-color
+  &__title
+    font-weight: 700
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 1
+  &__link
+    &:hover
+      text-decoration: underline
+  &__excerpt
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 3
+
+.meta
+  &__author:hover
+    text-decoration: underline
+
+.categories
+  &__link:hover
+    text-decoration: underline
+
+.tags
+  &__link:hover
+    text-decoration: underline

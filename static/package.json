@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^7.1.0",
+    "@rollup/plugin-terser": "^1.0.0",
+    "autoprefixer": "^10.6.1",
+    "cssnano": "^9.8.0",
+    "postcss": "^8.5.30",
+    "rollup": "^4.64.7",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.105.2"
+  }
+}

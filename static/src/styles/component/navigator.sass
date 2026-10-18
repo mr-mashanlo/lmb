@@ -1,0 +1,28 @@
+@use '../app/variables' as variable
+
+.navigator
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  &__prev
+    text-align: left
+    justify-items: left
+  &__next
+    text-align: right
+    justify-items: right
+  &__link
+    display: flex
+    flex-direction: column
+    gap: .4rem
+    color: variable.$light-text-color
+    &:hover .navigator__title
+      text-decoration: underline
+  &__title
+    font-weight: 700
+    color: variable.$text-color
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 1
+  &__icon
+    width: 12rem
+    stroke: variable.$white-text-color
